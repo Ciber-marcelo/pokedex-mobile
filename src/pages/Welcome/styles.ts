@@ -5,29 +5,39 @@ import theme from '../../global/styles/theme';
 export const styles = StyleSheet.create({
    container: {
       flex: 1,
-      backgroundColor: theme.colors.background,
+      backgroundColor: theme.colors.backgroundWater,
    },
    content: {
-      // display: 'flex',
       height: '70%',
       justifyContent: 'center',
       alignItems: 'center'
    },
-   animation: {
+   wrapperAnimation: {
       width: 200,
-      height: 200
-   },
-   footer: {
+      height: 300,
+      borderRadius: 100,
+      backgroundColor: theme.colors.types.water,
+      //transform está sendo usado aqui para inclinar o componente em 30 graus
+      transform: [{ rotate: '30deg' }],
       justifyContent: 'center',
       alignItems: 'center',
+   },
+   wrapperImage: {
+      transform: [{ rotate: '-30deg' }],
+   },
+   footer: {
+      height: '30%',
+      padding: 20,
       borderTopRightRadius: 20,
       borderTopLeftRadius: 20,
-      height: '30%',
-      backgroundColor: theme.colors.backgroundWater
+      backgroundColor: theme.colors.background,
+      justifyContent: 'center',
+      alignItems: 'center',
    },
    title: {
-      fontSize: 20,
-      color: theme.colors.text_white
+      fontSize: 40,
+      marginTop: 20,
+      color: theme.colors.text_white,
    },
    subtitle: {
       fontSize: 14,
