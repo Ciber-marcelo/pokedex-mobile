@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList } from 'react-native';
-import { Card } from "../../components/Card";
+// "Pokemon" e "PokemonType" são tipagens esportadas, para q eu n pressive tipar elas aqui. 
+import { Card, Pokemon, PokemonType } from "../../components/Card";
 import api from "../../service/api";
 import { styles } from './styles';
 
-type Pokemon = {
-   name: string
-   url: string
-   id: number
-   types: PokemonType[]
-}
-type PokemonType = {
-   type: string
-}
 type Request = {
    id: number
    types: PokemonType[]

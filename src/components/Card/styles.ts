@@ -14,6 +14,7 @@ type PokemonType = {
 //para deixar a cor de fundo dinamica, já q n consegui com o "StyleSheet", pesquise mais sobre caso tenha duvidas.
 export const PokemonCard = styled.TouchableOpacity<PokemonType>`
    ${({ type }) => css`
+      height: 115px;
       border-radius: 10px;
       margin-top: 30px;
       flex-direction: row;
@@ -25,11 +26,9 @@ export const PokemonCard = styled.TouchableOpacity<PokemonType>`
 //tive q usar a biblioteca "styled-components" aqui tb, para deixar a cor dinamica.
 export const PokemonType = styled.View<PokemonType>`
    ${({ type }) => css`
-      // width: 65px;
       height: 25px;
       padding: 5px;
       border-radius: 3px;
-      // margin-left: 5px;
       margin-top: 5px;
       justify-content: center;
       align-items: center;
@@ -43,14 +42,13 @@ export const styles = StyleSheet.create({
    leftCard: {
       width: '60%',
       position: 'relative',
-      // backgroundColor: 'red'
    },
-   image10x5: {
+   image6x3: {
       position: 'absolute',
-      width: 161,
-      height: 75,
-      left: 3,
-      top: 3,
+      width: 120,
+      height: 52,
+      left: 5,
+      top: 10,
       opacity: 0.1,
    },
    pokemonId: {
@@ -63,7 +61,6 @@ export const styles = StyleSheet.create({
       fontWeight: 'bold',
       fontSize: 26,
       lineHeight: 31,
-      marginTop: 5,
       textTransform: 'capitalize',
       color: theme.colors.text_white
    },
@@ -78,8 +75,22 @@ export const styles = StyleSheet.create({
       textTransform: 'capitalize',
    },
    rightCard: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: '40%',
+      position: 'relative'
    },
-   
+   pokemonImage: {
+      marginTop: -35,
+      width: 130,
+      height: 130,
+   },
+   imagePokeball: {
+      position: 'absolute',
+      width: 160,
+      height: 115,
+      opacity: 0.1,
+   },
 });
 
 
