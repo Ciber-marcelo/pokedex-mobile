@@ -52,7 +52,7 @@ export function Card({data, ...rest}: Props) {
                   //esse link facilita MUITO pra pegar as imagens dos pokemons, mas depois tenta pegar elas pela API pra estudar.
                   `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`
                }}
-            />
+            /> 
          </View>
       </SC.PokemonCard>
    );

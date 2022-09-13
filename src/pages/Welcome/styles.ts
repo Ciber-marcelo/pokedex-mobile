@@ -4,7 +4,7 @@ import theme from '../../global/styles/theme';
 export const styles = StyleSheet.create({
    container: {
       flex: 1,
-      backgroundColor: theme.colors.backgroundWater,
+      backgroundColor: theme.colors.backgroundTypes.water,
    },
    content: {
       height: '70%',

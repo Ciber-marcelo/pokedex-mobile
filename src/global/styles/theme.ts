@@ -1,8 +1,9 @@
 export default {
    colors: {
       background: '#FFFFFF',
-      backgroundWater: '#58ABF6',
+      backgroundGray: '#F2F2F2',
       text_white: '#FFFFFF',
+      text_gray: '#747476',
       text_light: 'rgba(23, 23, 27, 0.6)',
 
       types: {
